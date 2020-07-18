@@ -392,7 +392,7 @@ class Uploader(object):
         
         user = self.cfg.get_user(item["userid"])
         if user["downloads"] == 0:
-            self.api.sendMessage(str(item["userid"]), "This bot was developed by @instaagroup.\n Check us out or modify the code on GitHub!")
+            self.api.sendMessage(str(item["userid"]), "This bot was developed by @kp.14_ .")
             self.counter += 1
             logging.info("Welcomed {u}!".format(u=item["username"]))
         cfg.user_add_download(item["userid"], item["username"], item["download_from"])
@@ -416,7 +416,7 @@ class Uploader(object):
             self.api.send_direct_image(xd)
         user = self.cfg.get_user(item["userid"])
         if user["downloads"] == 0:
-            self.api.sendMessage(str(item["userid"]), "This bot was developed by @instaagroup.\n Check us out or modify the code on GitHub!")
+            self.api.sendMessage(str(item["userid"]), "This bot was developed by @kp.14_ .")
             self.counter += 1
             logging.info("Welcomed {u}!".format(u=item["username"]))
         cfg.user_add_download(item["userid"], item["username"], item["download_from"])
