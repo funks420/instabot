@@ -914,7 +914,7 @@ class InboxHandler(object):
             elif item.item_type == "media_share":
                 self.handle_media_share(username, item)
 
-username = "instadownloader_bot"
+username = "instadownload_bot"
 password = "poopoo12"
 
 cfg = Config(Path("config.json"))
