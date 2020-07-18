@@ -416,7 +416,7 @@ class Uploader(object):
             self.api.send_direct_image(xd)
         user = self.cfg.get_user(item["userid"])
         if user["downloads"] == 0:
-            self.api.sendMessage(str(item["userid"]), "This bot was developed by @kp.14_ .")
+            self.api.sendMessage(str(item["userid"]), "This bot is free to use, please share it around as it may be good use to some people.")
             self.counter += 1
             logging.info("Welcomed {u}!".format(u=item["username"]))
         cfg.user_add_download(item["userid"], item["username"], item["download_from"])
