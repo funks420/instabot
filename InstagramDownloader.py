@@ -119,7 +119,7 @@ class Config(object):
     def get_day(self):
         day = self.get_day_unsafe()
         return json.loads(json.dumps(day))
-
+ 
     def day_add_download(self):
         day = self.get_day_unsafe()
         self.lock.acquire()
